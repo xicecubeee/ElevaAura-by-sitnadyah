@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Home ElevaAura</title>
+  <link rel="icon" href="gambar/logoea.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+   } 
+
+   body {
+    height: 100vh;
+    background-image: url("gambar/gunung.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+   }
+
+   .navbar {
+    background-color: #819fd6;
+    color: #e8e4e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+   }
+
+   .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+   }
+
+   .menu {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .menu li {
+    margin-right: 22px;
+   }
+
+   .menu li:last-child {
+    margin-right: 0;
+   }
+
+   .menu li a:hover {
+    background-color: #121112;
+    color: #e9e0e0;
+    border-radius: 5px;
+   }
+
+   .menu li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+   .search-box {
+    display: flex;
+    align-items: center;
+   }
+
+   .search-box input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #4a2569;
+   }
+
+   .search-box button {
+    background-color: #696696;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+
+   .search-box button:hover {
+    background-color: #819fd6;
+   }
+
+   .content {
+    background-color: rgba(95, 119, 139, 0.638);
+    right: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    transform: translateY(-50%);
+   }
+
+   .content h1 {
+    font-size: 100px;
+    margin-top: 30px;
+   }
+
+   .content p {
+    font-size: 30px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+   }
+
+   .content button {
+    width: 200px;
+    margin: 20px 10px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #819fd6;
+    text-decoration: none;
+    border: 3px solid #819fd6;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+   }
+
+   .content button:hover {
+    background-color: whitesmoke;
+   }
+
+   /* Media Queries */
+   @media screen and (max-width: 768px) {
+    .menu {
+      flex-basis: 100%;
+      margin-top: 10px;
+    }
+   }
+
+   @media screen and (max-width: 600px) {
+    .menu li {
+      margin-right: 10px;
+    }
+
+    .search-box {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .search-box input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+    }
+   }
+   </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="home.html">Eleva Aura</a>
+    </div>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="destination.html">Destination</a></li>
+      <li><a href="tips.html">Climbing Tips</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" name="search" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+    <div class="content">
+      <h1>Eleva Aura</h1>
+      <p>Welcome to Eleva Aura website. Feel free to explore!</p>
+      <div>
+        <button type="button"> <a href="about.html"> Continue </a></button>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

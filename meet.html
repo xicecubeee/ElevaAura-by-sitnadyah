@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Meet Redesign</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #0F9D58;
+			color: #fff;
+			padding: 16px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header h1 {
+			margin: 0;
+		}
+		.header button {
+			background-color: #fff;
+			color: #0F9D58;
+			border: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 16px;
+			justify-content: space-between;
+		}
+		.card {
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			padding: 16px;
+			flex-basis: calc(33.33% - 16px);
+			margin-bottom: 16px;
+		}
+		.card h2 {
+			margin: 0;
+			margin-bottom: 8px;
+		}
+		.card p {
+			margin: 0;
+		margin-bottom: 16px;
+		}
+		.card button {
+			background-color: #0F9D58;
+			color: #fff;
+			border: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Google Meet</h1>
+		<button>New Meeting</button>
+	</div>
+	<div class="content">
+		<div class="card">
+			<h2>Upcoming Meetings</h2>
+			<p>Meeting 1</p>
+			<p>Meeting 2</p>
+			<p>Meeting 3</p>
+			<button>Join</button>
+		</div>
+		<div class="card">
+			<h2>Past Meetings</h2>
+			<p>Meeting 1</p>
+			<p>Meeting 2</p>
+			<p>Meeting 3</p>
+		</div>
+		<div class="card">
+			<h2>Settings</h2>
+			<p>Customize your Google Meet experience</p>
+			<button>Customize</button>
+		</div>
+	</div>
+</body>
+</html>

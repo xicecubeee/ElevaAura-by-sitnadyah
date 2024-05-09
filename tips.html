@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Climbing Tips</title>
+  <link rel="icon" href="gambar/logoea.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+      background-image: url("gambar/gunung.jpg");
+      background-size: cover;
+      background-position: center;
+      overflow-y: scroll; 
+    }
+
+    a {
+      font-size: 38px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .container {
+      height: 100vh; 
+    }
+
+    .card {
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    .card-title {
+      font-weight: 600;
+    }
+
+    .img-fluid {
+      height: 300px !important;
+      cursor: pointer;
+      transition: transform 2s, filter 1.5s ease-in-out;
+      transform-origin: center center;
+      filter: brightness(50%);
+    }
+
+    .img-fluid:hover {
+      filter: brightness(100%);
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container my-2">
+    <a href="home.html">Climbing Tips</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="gambar/tips1.jpg" class="card-img-top img-fluid" alt="CNN Indonesia">
+          <div class="card-body">
+            <h5 class="card-title"> 5 Tips Pendakian Pemula </h5>
+            <p class="card-text">CNN Indonesia memberikan 5 tips persiapan untuk pemula yang baru pertama naik gunung</p>
+          </div>
+          <a href="https://www.cnnindonesia.com/gaya-hidup/20230131144221-269-907083/5-tips-persiapan-untuk-pemula-yang-baru-pertama-naik-gunung" class="btn btn-primary">More</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="gambar/tips2.jpg" class="card-img-top img-fluid" alt="Atourin">
+          <div class="card-body">
+            <h5 class="card-title">Tips Pendaki Pemula</h5>
+            <p class="card-text">Atourin Blog memberikan tips mendaki gunung untuk pemula, termasuk memilih destinasi wisata atau gunung yang akan didaki berdasarkan kondisi fisik dan niat terlebih dahulu.</p>
+          </div>
+          <a href="https://blog.atourin.com/tips/tips-mendaki-gunung-untuk-pemula/" class="btn btn-primary">More</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="gambar/tips3.webp" class="card-img-top img-fluid" alt="Orami.co.id">
+          <div class="card-body">
+            <h5 class="card-title">Rekomendasi Gunung Bagi Pemula</h5>
+            <p class="card-text">Orami.co.id memberikan rekomendasi gunung dan tips mendaki gunung bagi pemula, agar dapat mengetahuai rute dan medan gunung yang akan didaki.</p>
+          </div>
+          <a href="https://www.orami.co.id/magazine/tips-mendaki-gunung" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
